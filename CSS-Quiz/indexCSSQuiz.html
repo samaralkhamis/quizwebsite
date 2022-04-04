@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+  <div class="m-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar1" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link active ">Home</a>
+                    
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown" >Quizzes</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">HTML</a>
+                            <a href="#" class="dropdown-item">CSS</a>
+                            <a href="#" class="dropdown-item">JavaScript</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+</div>
+  <!-- *******End Navbar******* -->
+  <div id="bordeer">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+        <div class="col-md-10 col-lg-10">
+          <div class="border">
+            <div class="question bg- p-3 border-bottom" style="background-color: #00bdfcd0;">
+              <div class="d-flex flex-row justify-content-between align-items-center mcq">
+
+                <h4 class="small-nav">HTML-Quiz</h4> <span id="quisnum"></span>
+
+              </div>
+            </div>
+            <div class="question bg-white p-3 border-bottom">
+              <div class="d-flex flex-row align-items-center question-title">
+                <h3 style="color: #00bdfcd0;">Q.</h3>
+                <div id="QuizContainer">
+                  <p id="questions">questions</p>
+              </div>
+            </div>
+          </div>
+     
+    
+        <div class="d-flex flex-row  align-items-center p-3 bg-white" id="AnswersDiv" style="margin-left: -25px;">
+          <div class="ans ml-2" >
+            <button id="answer1" >answer1</button></div>
+         <div class="ans ml-2">
+         <button id="answer2" >answer2</button>
+        </div>
+        <div class="ans ml-2"><button id="answer3" >answer3</button>
+        </div>
+        <div class="ans ml-2"><button id="answer4" >answer4</button>
+        </div></div>
+        <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+        <!--**Next button-->
+        <button class="btn btn-next col-lg-2" type="submit"><a id="nxtBtn">Next</a></button>
+        <div class="col-lg-4">
+          <div class="counter"  class="timer" >
+            <div><span id="time">03:00</span> </div>
+          </div>
+        </div></div>
+    </div>
+   
+  </div>
+  
+</div>
+
+
+    </div>
+    <script src="./appCSSQuiz.js"></script>
+
+
+
+  <p id="Timer"></p>
+
+
+  <!--********Start Footer********-->
+
+
+  <div class="container my-5">
+
+    <div class="container my-5">
+
+      <footer style="background-color: #000000;">
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #ffffff;">Samar</h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;">@Follow</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#!" style="color: #ee06ff;"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;">Contact</a>
+                </li>
+                <li>
+                  <a href="#!" style="color: #ffffff;">SamarAlkhamiss@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #ffffff;">Hadi</h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;">@Follow</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#!" style="color: #a600c7;"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;">Contact</a>
+                </li>
+                <li>
+                  <a href="#!" style="color: #ffffff;">hadialsaden@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #ffffff;">Saja</h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;">@Follow</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#!" style="color: #610077;"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;">Contact</a>
+                </li>
+                <li>
+                  <a href="#!" style="color: #ffffff;">saja.ghalayini02@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h6 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">Sometimes we stumble and fall, but we have to stand up and keep moving forward <br><br>
+                  If you want to live a happy life, tie your life to goals, not people</h6>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;"></a>
+                </li>
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;"></a>
+                </li>
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;"></a>
+                </li>
+                <li>
+                  <a href="#!" style="color: #4f4f4f;"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(233, 233, 233, 0.2);">
+          Â© 2022 Copyright:
+          <a class="text-dark" href="#">Quizooo</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    
+    </div>
+  </body>
+  <!--********End Footer********-->
+</html>
